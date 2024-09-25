@@ -1,13 +1,13 @@
 from flask import Flask
 
 # Create a Flask application
-web = Flask(name)
+web = Flask(__name__)
 
 # Define a route for the homepage
-.route('/')
+@web.route('/')
 def hello_world():
-    return 'This bot is made by AssassiN and currently it hosted and live for everyone'
+    return 'This bot is made by AssassiN and is currently hosted and live for everyone'
 
 # Run the application
-if name == 'main':
-  web()
+if __name__ == '__main__':
+    web.run()
