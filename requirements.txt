@@ -1,4 +1,6 @@
-flask
+TgCrypto
+Flask
+gunicorn
 pyrogram
 beautifulsoup4
 requests
